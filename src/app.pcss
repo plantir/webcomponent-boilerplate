@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+app-button,
+app-new-button {
+	&:not(:has(> *)) {
+		@apply daisy-loading daisy-loading-spinner text-primary;
+	}
+}
